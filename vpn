@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /home/dzastin/network_connect/
+sudo ./jvpn.pl
