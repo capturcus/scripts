@@ -2,17 +2,18 @@
 
 import subprocess, re
 
-mouses = ["A4Tech USB Mouse"]
+mouses = ["A4Tech USB Mouse", "COMPANY USB Device"]
 
-out = subprocess.check_output(["xinput", "list"])
-for line in out.split("\n"):
-    for mouse in mouses:
-        if mouse in line:
-            pattern = 'id=([0-9]+)'
-            a = re.search(pattern, line)
-            mouse_id = a.group()[3:]
-            break
+def get_mouse_id():
+    out = subprocess.check_output(["xinput", "list"])
+    for line in out.split("\n"):
+        for mouse in mouses:
+            if mouse in line:
+                pattern = 'id=([0-9]+)'
+                a = re.search(pattern, line)
+                return a.group()[3:]
 
+mouse_id = get_mouse_id()
 prop = "Coordinate Transformation Matrix"
 
 out = subprocess.check_output(["xinput", "list-props", mouse_id])
