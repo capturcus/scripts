@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd ~/Downloads/rack/Rack
+rq ./Rack

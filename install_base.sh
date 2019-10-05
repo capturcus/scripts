@@ -2,11 +2,11 @@
 
 set -e
 
-#echo 'deb mirror://mirrors.ubuntu.com/mirrors.txt xenial main restricted universe multiverse' | sudo tee -a /etc/apt/sources.list
-#echo 'deb mirror://mirrors.ubuntu.com/mirrors.txt xenial-updates main restricted universe multiverse' | sudo tee -a /etc/apt/sources.list
-#echo 'deb mirror://mirrors.ubuntu.com/mirrors.txt xenial-backports main restricted universe multiverse' | sudo tee -a /etc/apt/sources.list
-#echo 'deb mirror://mirrors.ubuntu.com/mirrors.txt xenial-security main restricted universe multiverse' | sudo tee -a /etc/apt/sources.list
-sudo apt-get update
+#echo 'deb mirror://mirrors.ubuntu.com/mirrors.txt bionic main restricted universe multiverse' | sudo tee -a /etc/apt/sources.list
+#echo 'deb mirror://mirrors.ubuntu.com/mirrors.txt bionic-updates main restricted universe multiverse' | sudo tee -a /etc/apt/sources.list
+#echo 'deb mirror://mirrors.ubuntu.com/mirrors.txt bionic-backports main restricted universe multiverse' | sudo tee -a /etc/apt/sources.list
+#echo 'deb mirror://mirrors.ubuntu.com/mirrors.txt bionic-security main restricted universe multiverse' | sudo tee -a /etc/apt/sources.list
+#sudo apt-get update
 
 sudo apt-get install zsh git build-essential python-software-properties vim-gtk compton alsa-utils pulseaudio xinit software-properties-common hsetroot default-jre python-pip i3 wicd-curses gitk -y
 
@@ -21,7 +21,4 @@ sudo add-apt-repository -y ppa:mmstick76/alacritty
 sudo apt-get update
 sudo apt-get install iridium-browser alacritty -y
 
-sudo pip install --upgrade pip
-sudo pip install jinja2
-
-sudo snap install --classic code
+#after running this script install and run configuremegently

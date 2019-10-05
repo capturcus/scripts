@@ -1,2 +1,2 @@
 #!/bin/bash
-amixer sset Master "1%-"
+amixer -c1 sset Master "1%-"

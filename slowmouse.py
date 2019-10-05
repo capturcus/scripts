@@ -2,6 +2,7 @@
 
 import subprocess, re
 
+speed = "0.500000,"
 mouses = ["A4Tech USB Mouse", "COMPANY USB Device"]
 
 def get_mouse_id():
@@ -22,4 +23,4 @@ for line in out.split("\n"):
         prop_id = line[35:].split(")")[0]
         break
 
-subprocess.check_output(["xinput", "set-prop", mouse_id, prop_id, "0.500000,", "0.000000,", "0.000000,", "0.000000,", "0.500000,", "0.000000,", "0.000000,", "0.000000,", "1.00000"])
+subprocess.check_output(["xinput", "set-prop", mouse_id, prop_id, speed, "0.000000,", "0.000000,", "0.000000,", speed, "0.000000,", "0.000000,", "0.000000,", "1.00000"])
