@@ -21,4 +21,9 @@ sudo add-apt-repository -y ppa:mmstick76/alacritty
 sudo apt-get update
 sudo apt-get install iridium-browser alacritty -y
 
+sudo pip install --upgrade pip
+sudo pip install jinja2
+
+sudo snap install --classic code
+
 #after running this script install and run configuremegently
