@@ -1,3 +1,2 @@
 #!/bin/bash
-cd /home/dzastin/network_connect/
-sudo ./jvpn.pl
+sudo openvpn --config /etc/openvpn/Codilime_VPN_netplan.ovpn
